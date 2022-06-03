@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Priority of Selectors</title>
+    <style>
+      /* tag selector - 1 */
+      p {
+          font-size: 10px;
+          color:teal;
+      }
+
+      /* Universal Selector - 0 */
+      * {
+           font-size: 20px;
+           background-color: yellowgreen;
+      }
+
+      /* Class Selector */
+      .para {
+          font-size: 50px;
+      }
+
+      /* id selector-100 */
+      #masai {
+          font-size: 100px;
+      }
+
+      /* Inline Style - 1000 */
+    </style>
+</head>
+<body>
+   <p class="para" id="masai" style="font-size: 18px;">I am paragraph</p> 
+</body>
+</html>
+
+<!-- Priority Order:
+SICTU
+S: Inline Style-1000
+I: Id selector-100
+C: Class Selector-10
+T: Tag Selector or Type Selector-1
+U: Universal Selector: 0
+S>I>C>T>U -->

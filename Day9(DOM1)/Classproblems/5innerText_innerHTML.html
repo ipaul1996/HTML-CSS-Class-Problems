@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText & innerHTML</title>
+</head>
+<body>
+    <p id="para"> I am para</p>
+    <div id="box"> I am box</div>
+    <h1 id="head">I am heading <i>Big</i></h1>
+</body>
+</html>
+
+<script>
+    let x=document.getElementById("para").innerText;
+    console.log(x);
+    let y=document.getElementById("box");
+    console.log(y.innerText);
+    let z=document.getElementById("head").innerHTML;
+    console.log(z);
+</script>

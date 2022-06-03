@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+      body {
+          background-color:#feffff;
+      }
+      h1 {
+          width:25%;
+          text-align: center;
+          margin:auto;
+      }
+      #box {
+        width:60%;
+        border:1px;
+        margin:auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        padding:50px 30px 50px 30px;
+        background-color:#f6ede7;
+        display:flex;
+        justify-content: space-evenly;
+      }
+      #box>div {
+        border:1px;
+        width:15%;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #fffffe;
+      }
+      #box>div>p:first-child {
+          background-color:#f6ede7;
+          width:23%;
+          margin:auto;
+          margin-top: 20px;
+          border-radius: 5px;
+          padding:5px 0px 5px 0px;
+      }
+      #box>div>p:last-child {
+          font-family: 'Times New Roman';
+          font-weight: 549;
+      }
+    </style>
+</head>
+<body>
+    <h1>Ready to Realise Your Career Potential?</h1>
+    <div id="box">
+        <div>
+            <p>1</p>
+            <p>Apply for the Program</p>
+        </div>
+        <div>
+            <p>2</p>
+            <p>Crack the Admission Test</p>
+        </div>
+        <div>
+            <p>3</p>
+            <p>Learn At 0 Upfront Fee</p>
+        </div>
+        <div>
+            <p>4</p>
+            <p>Get Placed</p>
+        </div>
+        <div>
+            <p>5</p>
+            <p>Pay When You Earn 5LPA CTC</p>
+        </div>
+    </div>
+</body>
+</html>

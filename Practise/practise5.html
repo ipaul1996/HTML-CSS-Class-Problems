@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Sibling Selector</title>
+    <style>
+       h1~p {
+          color:blue;
+          background-color: black;
+       }
+       h1~div {
+        width:50%; 
+        height:200px;
+        background-color: blue;
+       }
+       #container>p~h3 {
+           color:brown;
+       }
+       p~h6 {
+           background-color: orange;
+       }
+       p~p {
+           font-size: larger;
+           color:blanchedalmond;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>h1</h1>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <h3>h3</h3>
+        <div id="box">
+            <h4>h4</h4>
+            <p>p5</p>
+            <p>p6</p>
+            <p>p7</p>
+            <h6>h6</h6>
+        </div>
+    </div>
+</body>
+</html>

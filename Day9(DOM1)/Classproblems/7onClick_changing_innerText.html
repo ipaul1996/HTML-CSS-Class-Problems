@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onClick_changing_innerText</title>
+</head>
+<body>
+    <h1 id="head">Changing innerText</h1>
+    <button onClick="likeMe()">Like</button>
+    <button onClick="dislikeMe()">Dislike</button>
+    <button onClick="res()">Reset</button>
+</body>
+</html>
+
+<script>
+   function likeMe() {
+       document.getElementById("head").innerText="Someone Liked Me"
+   }
+   function dislikeMe() {
+       document.getElementById("head").innerText="Someone Disliked Me"
+   }
+   function res() {
+       document.getElementById("head").innerText="Changing innerText"
+   }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" Value="Asmita">
+    <!-- Here we have set default value of input to "Asmita" -->
+    <!-- If we don't set anything then deafult value is empty string -->
+    <input id="name" type="text" placeholder="Write  your name here">
+    <input id="mobileno" type="number" placeholder="Mobile No.">
+    <button onClick="signUp()">Sign Up</button>
+</body>
+</html>
+
+<script>
+    function signUp() {
+       let x=document.getElementById("name").value;
+       let y=document.getElementById("mobileno").value;
+       console.log(x,y);
+    }
+</script>

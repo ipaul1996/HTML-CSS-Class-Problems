@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="Write your name here">
+    <input id="mbl" type="number" placeholder="Mobile No.">
+    
+    <select  id="gender">
+        <option >Gender</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+    <button onClick="signUp()">Sign Up</button>
+    <h1 id="nameDisplay">Display Name Here</h1>
+    <h2 id="mblDisplay">Display Mobile Number Here</h2>
+    <h3 id="genderDisplay">Display Gender Here</h3>
+</body>
+</html>
+
+
+<script>
+    function signUp() {
+        let x=document.getElementById("name").value;
+        let y=document.getElementById("mbl").value;
+        let z=document.getElementById("gender").value;
+        document.getElementById("nameDisplay").innerText=x;
+        document.getElementById("mblDisplay").innerText=y;
+        document.getElementById("genderDisplay").innerText=z;
+    }
+</script>
