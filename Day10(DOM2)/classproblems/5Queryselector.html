@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <h1 id="masai">Masai School</h1>
+    <h2 class="web-19">Indrajit Paul</h2>
+    <p>Tanuj</p>
+    <p>Rishav</p>
+    <h3 class="web-19">Avinash</h3>
+</body>
+</html>
+
+<script>
+    //getElementById
+    // let x=document.getElementById("masai");
+    // x.style.backgroundColor="red";
+
+    //Using Query Selector
+    let x=document.querySelector("#masai");
+    x.style.backgroundColor="red";
+
+
+
+    //getElementsByClassName
+    // let y=document.getElementsByClassName("web-19");
+    // for(let i=0; i<y.length; i++) {
+    //     y[i].style.color="teal";
+    // }
+
+    //Using Query Selector
+    let y=document.querySelector(".web-19");
+    // for(let i=0; i<y.length; i++) {
+    //     y[i].style.backgroundColor="teal";
+    // } ---> This is not possible because query selector returns only first element that matches.It never gives you any collection, so you can't use for loop on it.
+    y.style.backgroundColor="teal";
+
+    //getElementsByTagName
+    //let z=document.getElementsByTagName("p");
+    // for(let i=0; i<z.length; i++) {
+    //   z[i].style.backgroundColor="yellow";
+    // }
+
+    //Using Query Selector
+     let z=document.querySelector("p");
+     z.style.backgroundColor="yellow"
+</script>

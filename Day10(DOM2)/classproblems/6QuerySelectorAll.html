@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector All</title>
+</head>
+<body>
+    <h1 class="masai">Abhi</h1>
+    <h1 class="masai">Tanuj</h1>
+    <h1 class="masai">Rahul</h1>
+    <p>Gaurav</p>
+    <p>Vivek</p>
+    <p>Lokendra</p>
+    <h3 id="head">I am heading 3</h3>
+</body>
+</html>
+
+<script>
+    let x=document.querySelectorAll("#head")
+    console.log(x);
+    x[0].style.fontSize="60px"
+    //querySelectorAll always reurns array like object
+
+    let y=document.querySelectorAll(".masai");
+    console.log(y);
+
+    let z=document.querySelectorAll("p");
+    console.log(z);
+
+
+    // combinators
+    let u=document.querySelectorAll("body p");
+    console.log(u);
+    //querySelectorAll will select all p's
+
+    let v=document.querySelector("body>p");
+    console.log(v);
+    //1st p tag
+
+    let w=document.querySelectorAll("body>h1");
+    //all h1 tags
+
+    let a=document.querySelector("body>h1");
+    //First h1 tag
+
+    let b=document.querySelector("h1+p");
+    //First p tag
+    
+    let c=document.querySelectorAll("h1~p");
+    //All p tags
+
+</script>

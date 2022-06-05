@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <h1>I am heading</h1>
+</body>
+</html>
+
+<script>
+    //Syntax: addEventListener("eventName",functionName)
+    document.getElementById("btn").addEventListener("click",myFunction);
+
+    // function myFunction() {
+    //     document.getElementsByTagName("h1")[0].style.color="red";
+    // }
+
+    // Whenever you add an event to any element, an additional event object will be formed which has some additional properties of event
+    // You can access it in function parameter.
+
+    function myFunction(event) {
+        console.log(event);
+        console.log(event.target);
+        console.log(event.target.innerText);
+    }
+</script>

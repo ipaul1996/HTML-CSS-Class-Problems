@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+    <style>
+        #container {
+            width:90%;
+            border:1px solid red;
+            height: 50px;
+            background-color: blue;
+            display:flex;
+        }
+        #container>div {
+            width:10%;
+            border:1px solid green;
+            height: 40px;
+            background-color: pink;
+            margin:auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
+
+<script>
+    let boxes=document.querySelectorAll("#container>div");
+    console.log(boxes);
+    for(let i=0; i<boxes.length; i++) {
+        boxes[i].addEventListener("click", myFunction);
+    }
+     
+    function myFunction(event) {
+        console.log(event.target)
+        event.target.style.backgroundColor="yellow";
+        event.target.parentNode.style.backgroundColor="black"
+    }
+    
+</script>

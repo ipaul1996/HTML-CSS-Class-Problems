@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Onclick</title>
+</head>
+<body>
+    <h1 id="heading">Masai School</h1>
+    <button onClick="myFunction()">Change Color</button>
+</body>
+</html>
+
+
+<script>
+    function myFunction() {
+        document.getElementById("heading").style.backgroundColor="blue";
+        document.getElementById("heading").style.color="white";
+        document.getElementById("heading").style.fontSize="35px"
+        document.getElementById("heading").style.textAlign="center";
+    }
+
+    //Here when someone clicks on the button on the browser an onClick event is triggered and which calls for a function, myFunction, which is defined in the script. Inside the function by getElementById("heading") we catch the h1 element having id "heading" and give some inline styles
+</script>
