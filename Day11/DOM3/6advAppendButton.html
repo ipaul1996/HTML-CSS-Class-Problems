@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Button With array of Objects </title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let btnarr = [
+        {name:"A", color:"white", bg:"red"},
+        {name:"B", color:"black", bg:"yellow"},
+        {name:"C", color:"yellow", bg:"teal"},
+        ];
+    
+    for(let i=0; i<btnarr.length; i++) {
+        let btn=document.createElement("button");
+        btn.innerText= btnarr[i].name;
+        btn.style.backgroundColor=btnarr[i].color;
+        btn.style.color=btnarr[i].bg;
+        btn.style.marginRight="10px"
+        document.querySelector("body").append(btn);
+    }
+</script>
