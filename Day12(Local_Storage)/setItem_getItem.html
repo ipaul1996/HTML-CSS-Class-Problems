@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setItem and getItem</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    <p></p>
+    <p></p>
+</body>
+</html>
+
+
+<script>
+    //localStorage.setItem("keyname", "Value")
+    localStorage.setItem("Student-1", "Vivek");
+    localStorage.setItem("Student-2", "Indrajit");
+    localStorage.setItem("Student-3", "Asmita");
+    localStorage.setItem("Student-2", "Indra");
+    localStorage.setItem("Student-3", "AB");
+    //Here we will not get 5 key value pair but the value of keys Student-2 and Student-3 will be updated just like what happens in case of objects
+    localStorage.setItem("S-1 Mobile No.", 745084856);
+    localStorage.setItem("S-2 Mobile No.", 858596741);
+
+    //localStorage.getItem("keyname");
+    let x=localStorage.getItem("Student-3");
+    console.log(x); // It will print the value of x in console
+    //If you want show this x in browser page we have to do the following:
+    document.querySelector("h1+p").innerText=x;
+    document.querySelector("p+p").innerText=localStorage.getItem("S-1 Mobile No.");
+</script>

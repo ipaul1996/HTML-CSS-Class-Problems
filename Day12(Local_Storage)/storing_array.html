@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storing Array in Local Storage</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let nums=[1,2,3,4,5];
+    localStorage.setItem("array1",nums); //1,2,3,4,5
+    //This does not store the data in array format
+
+    localStorage.setItem("array2", JSON.stringify([1,2,3,4,5]));
+    localStorage.setItem("array3", JSON.stringify(nums));
+ 
+    let namesarr=["Indra", "Ravi", "Kaju", "Amar"];
+    localStorage.setItem("Names",JSON.stringify(namesarr));
+
+    let y=localStorage.getItem("Names");
+    //console.log(y); //["Indra","Ravi","Kaju","Amar"]
+    // although the data looks like array but the data actually is in JSON format
+    let v=JSON.parse(localStorage.getItem("Names"));
+    console.log(v);
+
+
+
+
+    let nameobj={name:"Amit", city:"Bangalore"};
+    localStorage.setItem("Details",JSON.stringify(nameobj));
+
+    let x=localStorage.getItem("Details");
+    //console.log(x); //{"name":"Amit", "city":"Bangalore"} -->Giving data in JSON format
+    //console.log(x.name); //undefined because although the data looks like obj but the data actually is in JSON format so dot notation will not work
+
+    let u=JSON.parse(localStorage.getItem("Details"));
+    console.log(u);
+    //JSON - Universal Data format
+    //JSON VS Obj
+    // let students={student1:"Indra",student2:"AB" };
+    // let studentsJSON={"student1":"Indra","student2":"AB"};
+
+</script>
