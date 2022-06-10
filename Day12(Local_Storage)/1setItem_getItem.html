@@ -21,14 +21,14 @@
     localStorage.setItem("Student-3", "Asmita");
     localStorage.setItem("Student-2", "Indra");
     localStorage.setItem("Student-3", "AB");
-    //Here we will not get 5 key value pair but the value of keys Student-2 and Student-3 will be updated just like what happens in case of objects
+    //Here we will not get 5 key value pairs but the value of keys of Student-2 and Student-3 will be updated just like what happens in case of objects
     localStorage.setItem("S-1 Mobile No.", 745084856);
     localStorage.setItem("S-2 Mobile No.", 858596741);
 
     //localStorage.getItem("keyname");
     let x=localStorage.getItem("Student-3");
     console.log(x); // It will print the value of x in console
-    //If you want show this x in browser page we have to do the following:
+    //If you want to show this x in browser page we have to do the following:
     document.querySelector("h1+p").innerText=x;
     document.querySelector("p+p").innerText=localStorage.getItem("S-1 Mobile No.");
 </script>
