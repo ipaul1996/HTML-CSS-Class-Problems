@@ -22,13 +22,18 @@
     console.log(x.length);
     //This returns the length of the array
 
-    x[0].style.color="red";
-    x[1].style.color="red";
-    x[2].style.color="red";
+    // x[0].style.color="green";
+    // x[1].style.color="red";
+    // x[2].style.color="red";
 
     //Instead this we can also use a for loop to give styling
 
     for(let i=0; i<x.length; i++) {
         x[i].style.backgroundColor="yellow";
     }
+    
+    //Doubt: Why can't we use forEach here instead of for loop?
+    // x.forEach(function(el){
+    //     el.style.backGroundColor="teal";
+    // })
 </script>

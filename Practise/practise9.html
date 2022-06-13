@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Image</title>
+    <style>
+        body>div {
+            padding-left:500px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+    let div1=document.createElement("div");
+    let Image=document.createElement("img");
+    Image.setAttribute("src","https://masai-website-images.s3.ap-south-1.amazonaws.com/Aayushi_527cd1c2a3.jpg");
+    div1.append(Image);
+    document.querySelector("body").append(div1);
+</script>
